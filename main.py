@@ -9,8 +9,7 @@ def main():
     updated_figures = [date_today.strftime("%d/%m/%Y")]
     updated_figures.extend(scrape())
     df.loc[len(df)] = updated_figures
-    df.to_csv("C:/Users/micha/OneDrive - University College Dublin/Documents/PycharmProjects/wiki_scraper/DATA.csv",
-              index=False, header=True)
+    df.to_csv("DATA.csv", index=False, header=True)
 
 
 if __name__ == "__main__":
